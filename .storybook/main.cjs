@@ -11,9 +11,6 @@ module.exports = {
   }],
   framework: '@storybook/sveltekit',
   staticDirs: ['../static'],
-  features: {
-    interactionsDebugger: true,
-  },
   typescript: {
     check: false,
     checkOptions: {},
