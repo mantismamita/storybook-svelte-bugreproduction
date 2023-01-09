@@ -1,0 +1,8 @@
+@import "./__vars.css";
+@import "../../lib/assets/typo.css";
+@import "../../lib/assets/tokens.css";
+@import "../../lib/assets/mixins.css";
+
+body {
+  font-family: var(--font-normal);
+}

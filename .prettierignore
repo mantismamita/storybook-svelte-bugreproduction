@@ -1,0 +1,18 @@
+.DS_Store
+# node_modules
+/build
+/.svelte-kit
+/package
+.env
+.env.*
+!.env.example
+*.yml
+/.storybook
+static
+storybook-static
+readme.md
+
+# Ignore files for PNPM, NPM and YARN
+pnpm-lock.yaml
+package-lock.json
+yarn.lock

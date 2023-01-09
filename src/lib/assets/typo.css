@@ -1,0 +1,139 @@
+[class*="qg-tt"] {
+  --_font-size: var(--quarks-font-size, 50);
+  --_line-height: var(--quarks-line-height, calc(var(--_font-size) + 4));
+
+  font-family: var(--font-bold);
+  font-weight: 500;
+  font-size: calc(var(--px) * var(--_font-size));
+  line-height: calc(var(--px) * var(--_line-height));
+}
+
+[class*="qg-st"] {
+  --_font-size: var(--quarks-font-size, 50);
+  --_line-height: var(--quarks-line-height, calc(var(--_font-size) + 4));
+
+  font-family: var(--font-medium);
+  font-weight: 400;
+  font-size: calc(var(--px) * var(--_font-size));
+  line-height: calc(var(--px) * var(--_line-height));
+}
+
+[class*="qg-tx"] {
+  --_font-size: var(--quarks-font-size, 50);
+  --_line-height: var(--quarks-line-height, calc(var(--_font-size) + 4));
+
+  font-family: var(--font-normal);
+  font-weight: 300;
+  font-size: calc(var(--px) * var(--_font-size));
+  line-height: calc(var(--px) * var(--_line-height));
+}
+
+.qg-xtra-lh {
+  --_line-height: var(--quarks-line-height, calc(var(--_font-size) + 10));
+}
+
+.qg-tt2 {
+  --quarks-font-size: 24;
+}
+
+.qg-tt3 {
+  --quarks-font-size: 20;
+}
+
+.qg-tt4 {
+  --quarks-font-size: 18;
+}
+
+.qg-tt5 {
+  --quarks-font-size: 18;
+}
+
+.qg-st1 {
+  --quarks-font-size: 24;
+}
+
+.qg-st2 {
+  --quarks-font-size: 20;
+}
+
+.qg-st3 {
+  --quarks-font-size: 18;
+}
+
+.qg-st4 {
+  --quarks-font-size: 16;
+}
+
+.qg-st5 {
+  --quarks-font-size: 16;
+}
+
+.qg-st6 {
+  --quarks-font-size: 14;
+}
+
+.qg-tx1 {
+  --quarks-font-size: 18;
+}
+
+.qg-tx2 {
+  --quarks-font-size: 16;
+}
+
+.qg-tx3 {
+  --quarks-font-size: 14;
+}
+
+.qg-tx4 {
+  --quarks-font-size: 14;
+}
+
+.qg-tx5 {
+  --quarks-font-size: 12;
+}
+
+@media (--large-min-viewport) {
+  .qg-tt2 {
+    --quarks-font-size: 40;
+  }
+
+  .qg-tt3 {
+    --quarks-font-size: 32;
+  }
+
+  .qg-tt4 {
+    --quarks-font-size: 24;
+  }
+
+  .qg-tt5 {
+    --quarks-font-size: 20;
+  }
+
+  .qg-st1 {
+    --quarks-font-size: 32;
+  }
+
+  .qg-st2 {
+    --quarks-font-size: 24;
+  }
+
+  .qg-st3 {
+    --quarks-font-size: 20;
+  }
+
+  .qg-st4 {
+    --quarks-font-size: 18;
+  }
+
+  .qg-tx1 {
+    --quarks-font-size: 20;
+  }
+
+  .qg-tx2 {
+    --quarks-font-size: 18;
+  }
+
+  .qg-tx3 {
+    --quarks-font-size: 16;
+  }
+}

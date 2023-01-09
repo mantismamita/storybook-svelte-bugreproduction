@@ -1,0 +1,31 @@
+{
+  "extends": "./.svelte-kit/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "$src/*": ["src/*"],
+      "$assets/*": ["src/assets/*"],
+      "$helpers": ["src/lib/helpers/index.ts"],
+      "$helpers/*": ["src/lib/helpers/*"],
+      "$lib": ["src/lib"],
+      "$lib/*": ["src/lib/*"],
+      "$stories": ["src/stories"],
+      "$stories/*": ["src/stories/*"],
+      "$utils": ["src/utils"],
+      "$utils/*": ["src/utils/*"],
+      "$decorators": ["src/decorators"],
+      "$decorators/*": ["src/decorators/*"],
+      "$types": ["src/types.ts"]
+    },
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "outDir": "noDir"
+  },
+  "typeRoots": ["./node_modules/@types", "./src/definitions"],
+  "exclude": ["node_modules", "noDir/**/*"]
+}

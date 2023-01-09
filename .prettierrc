@@ -1,0 +1,19 @@
+{
+  "singleQuote": true,
+  "trailingComma": "all",
+  "semi": true,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "svelteSortOrder": "scripts-markup-styles",
+  "printWidth": 150,
+  "bracketSameLine": false,
+  "proseWrap": "always",
+  "overrides": [
+    {
+      "files": ["**/*.css", "**/*.html"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}

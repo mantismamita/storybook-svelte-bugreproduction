@@ -1,0 +1,25 @@
+:root {
+  /* px to rem */
+  --base: 16;
+  --px: calc((1 / var(--base) * 1rem));
+  --font-unit: calc(4 * var(--px)); /* 4px */
+  --space: calc(8 * var(--px)); /* 8px */
+  --space2: calc(var(--space) * 2); /* 16px */
+  --space3: calc(var(--space) * 3); /* 24px */
+
+  /* px */
+  --grid-gap: 16px;
+
+  /* Fonts */
+  --font-normal: franklingothicbook, arialFallbackNormal, sans-serif;
+  --font-medium: franklingothicmed, arialFallbackMedium, sans-serif;
+  --font-bold: franklingothicdemi, arialFallbackDemi, sans-serif;
+
+  --primary-shadow: 0 7px 20px 0 rgba(var(--rgb-black), 0.22);
+  --primary-shadow-dark: 0 7px 20px 0 rgba(var(--rgb-black), 0.4);
+
+  --border-radius: calc(8 * var(--px));
+
+  /* Animations */
+  --basic-bg-color-transition: background-color 0.3s ease-in;
+}

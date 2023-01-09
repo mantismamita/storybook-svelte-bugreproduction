@@ -1,0 +1,118 @@
+<script>
+  window.global = window;
+</script>
+
+<style>
+  @font-face {
+    font-family: franklingothicbook;
+    src:local("Franklin Gothic Book"),
+      local("FranklinGothic-Book"),
+      local("FranklinGothicBook"),
+      url(/dist/fonts/franklingothicbook.woff2) format('woff2'),
+      url(/dist/fonts/franklingothicbook.woff) format('woff');
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: franklingothicmed;
+    src:local("Franklin Gothic Medium"),
+      local("FranklinGothic-Medium"),
+      local("FranklinGothicMedium"),
+      url(/dist/fonts/franklingothicmed.woff2) format('woff2'),
+      url(/dist/fonts/franklingothicmed.woff) format('woff');
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: franklingothicdemi;
+    src:local("Franklin Gothic Demi"),
+      local("FranklinGothic-Demi"),
+      local("FranklinGothicDemi"),
+      url(/dist/fonts/franklingothicdemi.woff2) format('woff2'),
+      url(/dist/fonts/franklingothicdemi.woff) format('woff');
+    font-style: normal;
+    font-display: swap;
+  }
+
+  #root {
+    position: relative;
+  }
+
+  .docs-story .innerZoomElementWrapper > * {
+    width: 100% !important;
+  }
+
+  pre {
+    font-family: Operator Mono SSm A,Operator Mono SSm B,Source Code Pro,Menlo,Consolas,Monaco,monospace;
+    clear: both;
+    color: #fff;
+    background: #1b1b1b;
+    padding: 0;
+    -moz-tab-size: 2;
+    -o-tab-size: 2;
+    tab-size: 2;
+    -ms-word-break: normal;
+    word-break: normal;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    position: relative;
+    line-height: 24px;
+    border-radius: 3px;
+    min-width: 100px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 100%;
+    overflow: scroll;
+  }
+
+  pre[rel]:not([rel=""]):before {
+    font-family: Gotham Narrow SSm A,Gotham Narrow SSm B,Rubik,Lato,Lucida Grande,Lucida Sans Unicode,Tahoma,Sans-Serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: .5rem;
+    content: attr(rel);
+    color: #fff;
+    position: absolute;
+    top: -.2rem;
+    right: .4rem;
+    padding: 0;
+    color: #ff7a18!important
+  }
+
+  pre code {
+    scrollbar-color: #666 #201c29;
+    background: 0 0;
+    white-space: pre;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
+    display: block;
+    max-width: 100%;
+    min-width: 100px;
+    font-size: .9rem;
+    padding: 22px 20px 12px 22px;
+    line-height: 1.75;
+  }
+
+  pre code::-webkit-scrollbar {
+    width: .5em;
+    height: .5em;
+  }
+
+  pre code::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: .5em;
+    box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25),inset -2px -2px 2px rgba(0,0,0,.25);
+  }
+
+  pre code::-webkit-scrollbar-track {
+    background: linear-gradient(90deg,#434343,#434343 1px,none 0,none)
+  }
+
+  .language-css {
+    color: #ffeb3b;
+  }
+</style>
