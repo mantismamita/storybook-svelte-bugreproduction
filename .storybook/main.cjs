@@ -1,10 +1,3 @@
-// https://github.com/michaelwooley/storybook-experimental-vite
-const {
-  mergeConfig
-} = require('vite');
-const tsconfigPaths = require('vite-tsconfig-paths').default;
-const preprocess = require('svelte-preprocess');
-
 module.exports = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|ts|svelte)'],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials', '@storybook/addon-svelte-csf', '@storybook/addon-a11y', '@storybook/addon-interactions', {
@@ -19,10 +12,7 @@ module.exports = {
   framework: '@storybook/sveltekit',
   staticDirs: ['../static'],
   features: {
-    // On-demand store does not work for .svelte stories, only CSF.
-    // Requires all stories to be loaded in bulk.
-    // REFERENCE https://storybook.js.org/docs/svelte/configure/overview#feature-flags
-    storyStoreV7: false
+    interactionsDebugger: true,
   },
   typescript: {
     check: false,
