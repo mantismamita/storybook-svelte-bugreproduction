@@ -15,7 +15,6 @@
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --check --plugin-search-dir=. . && eslint .",
     "format": "prettier --write --plugin-search-dir=. .",
-    "generate:css-json": "postcss src/assets/styles/global.css > /dev/null",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "STORYBOOK_PROD=1 storybook build",
     "dist": "npm run package && npm publish",
